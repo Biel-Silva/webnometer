@@ -124,6 +124,6 @@
             if(msg == '' || msg == null){
                 alert('Adicione um valor válido')
             } else {
-                newLi.innerHTML = min+' min, '+a+' seg'+' : '+b+' ms' + ' ('+msg+')' + '<div><img src="img/lapis.png" onclick="nomear()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>'
+                parentNode.parentNode.innerHTML = min+' min, '+a+' seg'+' : '+b+' ms' + ' ('+msg+')' + '<div><img src="img/lapis.png" onclick="nomear()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>'
             }
     }
