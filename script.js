@@ -113,7 +113,7 @@
     //Botção de adicionar
     function adicionar(){
         newLi = document.createElement('li')
-        newLi.innerHTML = min+' min, '+a+' seg'+' : '+b+' ms' + '<div><img src="img/lapis.png" onclick="nomear()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>'
+        newLi.innerHTML = `${min} min, ${a} seg : ${b} ms <div><img src="img/lapis.png" onclick="nomear.bind(this.parentNode.parentNode)()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>`
         ul.appendChild(newLi)
         limpar.style.display = 'inline'
     }
@@ -124,6 +124,6 @@
             if(msg == '' || msg == null){
                 alert('Adicione um valor válido')
             } else {
-                parentNode.parentNode.innerHTML = min+' min, '+a+' seg'+' : '+b+' ms' + ' ('+msg+')' + '<div><img src="img/lapis.png" onclick="nomear()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>'
+                newLi.innerHTML = `${min} min, ${a} seg : ${b} ms (${msg}) <div><img src="img/lapis.png" onclick="nomear.bind(this.parentNode.parentNode)()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>`
             }
     }
