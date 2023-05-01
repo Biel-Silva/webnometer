@@ -101,7 +101,7 @@ button.btts#add{
 }
 
 div#timers{
-    text-align: center;
+    
 }
 
 div#timers h3{
@@ -142,5 +142,5 @@ button#limparBtt{
     display: none;
     margin-top: 20px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 50%;
 }

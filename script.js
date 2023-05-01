@@ -124,6 +124,7 @@
             if(msg == '' || msg == null){
                 alert('Adicione um valor válido')
             } else {
-                newLi.innerHTML = `${min} min, ${a} seg : ${b} ms (${msg}) <div><img src="img/lapis.png" onclick="nomear.bind(this.parentNode.parentNode)()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>`
+                let este = this
+                este.innerHTML = `${min} min, ${a} seg : ${b} ms (${msg}) <div><img src="img/lapis.png" onclick="nomear()"></img> <img src="img/x.png" onclick="parentNode.parentNode.remove(); verificaListaVazia()"></img></div>`
             }
     }
